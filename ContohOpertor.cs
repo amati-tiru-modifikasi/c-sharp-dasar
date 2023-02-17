@@ -11,5 +11,7 @@ using System;
 	Console.WriteLine(b);
 	Console.WriteLine(c);
 	Console.WriteLine(d);
+
+    // https://dotnetfiddle.net/cOEw80
 	
 }
