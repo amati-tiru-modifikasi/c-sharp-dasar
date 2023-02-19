@@ -1,5 +1,4 @@
-﻿bool myBoolean;
-myBoolean = true;
+﻿bool myBoolean = true;
 Console.WriteLine($"{nameof(myBoolean)} : {myBoolean}");
 char myChar = '\x0061';
 Console.WriteLine($"{nameof(myChar)} : {myChar}");
