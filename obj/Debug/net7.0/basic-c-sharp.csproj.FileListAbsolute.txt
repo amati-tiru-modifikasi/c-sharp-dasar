@@ -1,0 +1,5 @@
+C:\Users\RSUP\DEV\C#\basic-c-sharp\obj\Debug\net7.0\basic-c-sharp.csproj.AssemblyReference.cache
+C:\Users\RSUP\DEV\C#\basic-c-sharp\obj\Debug\net7.0\basic-c-sharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RSUP\DEV\C#\basic-c-sharp\obj\Debug\net7.0\basic-c-sharp.AssemblyInfoInputs.cache
+C:\Users\RSUP\DEV\C#\basic-c-sharp\obj\Debug\net7.0\basic-c-sharp.AssemblyInfo.cs
+C:\Users\RSUP\DEV\C#\basic-c-sharp\obj\Debug\net7.0\basic-c-sharp.csproj.CoreCompileInputs.cache
