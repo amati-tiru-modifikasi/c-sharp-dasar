@@ -36,14 +36,22 @@
 // Console.WriteLine($"{nameof(str1)} == {nameof(str2)} ({nameof(str1.ToLower)}) ? : {str1.ToLower() == str2.ToLower()}");
 
 // Logical Operators
-bool bool1 = true;
-bool bool2 = false;
-bool bool3 = true;
+// bool bool1 = true;
+// bool bool2 = false;
+// bool bool3 = true;
 
-Console.WriteLine($"{nameof(bool1)}: {bool1}");
-Console.WriteLine($"{nameof(bool2)}: {bool2}");
-Console.WriteLine($"{nameof(bool3)}: {bool3}");
+// Console.WriteLine($"{nameof(bool1)}: {bool1}");
+// Console.WriteLine($"{nameof(bool2)}: {bool2}");
+// Console.WriteLine($"{nameof(bool3)}: {bool3}");
 
 
-Console.WriteLine($"!{nameof(bool3)}: {!bool3}");
-Console.WriteLine($"{nameof(bool1)} || {nameof(bool2)}:|| {nameof(bool3)}:: {bool1 || bool2 || bool3}");
+// Console.WriteLine($"!{nameof(bool3)}: {!bool3}");
+// Console.WriteLine($"{nameof(bool1)} || {nameof(bool2)}:|| {nameof(bool3)}:: {bool1 || bool2 || bool3}");
+
+// string concatentation + operator
+
+string string1 = string.Empty;
+string1 = "Hello " + "Boy";
+string string2 = string1 + "!";
+Console.WriteLine($"{nameof(string1)} : {string1}");
+Console.WriteLine($"{nameof(string2)} : {string2}");
