@@ -1,12 +1,12 @@
-﻿bool myBoolean = true;
+﻿var myBoolean = true;
 Console.WriteLine($"{nameof(myBoolean)} : {myBoolean}");
-char myChar = '\x0061';
+var myChar = '\x0061';
 Console.WriteLine($"{nameof(myChar)} : {myChar}");
-string myString = "this is a string";
+var myString = "this is a string";
 Console.WriteLine($"{nameof(myString)} : {myString}");
-int myInteger = 9;
+var myInteger = 9;
 Console.WriteLine($"{nameof(myInteger)} : {myInteger}");
-decimal myDecimal = 3.14m;
+var myDecimal = 3.14m;
 Console.WriteLine($"{nameof(myDecimal)} : {myDecimal}");
 
 // object
