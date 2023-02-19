@@ -50,8 +50,17 @@
 
 // string concatentation + operator
 
-string string1 = string.Empty;
-string1 = "Hello " + "Boy";
-string string2 = string1 + "!";
-Console.WriteLine($"{nameof(string1)} : {string1}");
-Console.WriteLine($"{nameof(string2)} : {string2}");
+// string string1 = string.Empty;
+// string1 = "Hello " + "Boy";
+// string string2 = string1 + "!";
+// Console.WriteLine($"{nameof(string1)} : {string1}");
+// Console.WriteLine($"{nameof(string2)} : {string2}");
+
+// += operator
+string str = "Hello boy";
+str += " again !";
+Console.WriteLine($"{nameof(str)} : {str}");
+
+int integer = 10;
+integer += 2;
+Console.WriteLine($"{nameof(integer)} : {integer}");
