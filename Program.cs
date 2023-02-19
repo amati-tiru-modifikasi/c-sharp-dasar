@@ -1,6 +1,8 @@
-﻿using System.Globalization;
-
-string myString = "I Love C#";
-Console.WriteLine($"{myString.StartsWith("\x0049", false, CultureInfo.CurrentCulture)} : {myString.StartsWith("\x0049")}");
-Console.WriteLine($"{myString.Length}");
-Console.SetWindowSize(250,250);
+﻿var planet = new basic_c_sharp.Planet(1);
+planet.Name = "Pluto";
+planet.Radius = 10000;
+planet.PrintInfo();
+Console.WriteLine();
+Console.WriteLine($"Temprature: {planet.GetTempratureId()}");
+Console.WriteLine();
+planet.AddSatelite("Bulan");
