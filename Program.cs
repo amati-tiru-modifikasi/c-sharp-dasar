@@ -30,7 +30,20 @@
 
 
 // equality operators
-string str1 = "I love C#";
-string str2  = "I Love Javascript";
+// string str1 = "I love C#";
+// string str2  = "I Love Javascript";
 
-Console.WriteLine($"{nameof(str1)} == {nameof(str2)} ({nameof(str1.ToLower)}) ? : {str1.ToLower() == str2.ToLower()}");
+// Console.WriteLine($"{nameof(str1)} == {nameof(str2)} ({nameof(str1.ToLower)}) ? : {str1.ToLower() == str2.ToLower()}");
+
+// Logical Operators
+bool bool1 = true;
+bool bool2 = false;
+bool bool3 = true;
+
+Console.WriteLine($"{nameof(bool1)}: {bool1}");
+Console.WriteLine($"{nameof(bool2)}: {bool2}");
+Console.WriteLine($"{nameof(bool3)}: {bool3}");
+
+
+Console.WriteLine($"!{nameof(bool3)}: {!bool3}");
+Console.WriteLine($"{nameof(bool1)} || {nameof(bool2)}:|| {nameof(bool3)}:: {bool1 || bool2 || bool3}");
