@@ -1,8 +1,9 @@
-﻿var planet = new basic_c_sharp.Planet(1);
-planet.Name = "Pluto";
-planet.Radius = 10000;
-planet.PrintInfo();
-Console.WriteLine();
-Console.WriteLine($"Temprature: {planet.GetTempratureId()}");
-Console.WriteLine();
-planet.AddSatelite("Bulan");
+﻿class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter your number: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(Math.Sqrt(num));
+    }
+}
