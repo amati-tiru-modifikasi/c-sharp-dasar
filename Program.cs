@@ -1,20 +1,31 @@
-﻿using System;
+﻿using Internal;
+using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        var randomBool = GenerateRandomBoolean();
-        switch (randomBool)
+        var randomString = GetCodeString();
+        switch (randomString)
         {
-            case true:
-                Console.WriteLine("Generated has been true");
+            case "code1":
+                Console.WriteLine($"{randomString}, case 1");
+                break;
+            case "code2":
+                Console.WriteLine($"{randomString}, case 2");
+                break;
+            case "code3":
+                Console.WriteLine($"{randomString}, case 3");
                 break;
             default:
-                Console.WriteLine("Generated has been false");
+                Console.WriteLine($"{randomString}, invalid");
                 break;
         }
+    }
 
+    static string GetCodeString()
+    {
+        return new string[4] { "code1","code2","code3","code4" }[new Random().Next(0,4)];
     }
 
     static bool GenerateRandomBoolean()
