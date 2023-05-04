@@ -4,22 +4,28 @@ class Program
 {
     static void Main(string[] args)
     {
-        var randomString = GetCodeString();
-        switch (randomString)
-        {
-            case "code1":
-                Console.WriteLine($"{randomString}, case 1");
-                break;
-            case "code2":
-                Console.WriteLine($"{randomString}, case 2");
-                break;
-            case "code3":
-                Console.WriteLine($"{randomString}, case 3");
-                break;
-            default:
-                Console.WriteLine($"{randomString}, invalid");
-                break;
-        }
+        int i = 0;
+        int j = i; 
+        Console.WriteLine($"Before, {nameof(i)}: {j}, {nameof(j)}: {j}");
+        i = 1;
+        Console.WriteLine($"After, {nameof(i)}: {i}, {nameof(j)}: {j}");
+
+        // var randomString = GetCodeString();
+        // switch (randomString)
+        // {
+        //     case "code1":
+        //         Console.WriteLine($"{randomString}, case 1");
+        //         break;
+        //     case "code2":
+        //         Console.WriteLine($"{randomString}, case 2");
+        //         break;
+        //     case "code3":
+        //         Console.WriteLine($"{randomString}, case 3");
+        //         break;
+        //     default:
+        //         Console.WriteLine($"{randomString}, invalid");
+        //         break;
+        // }
     }
 
     static string GetCodeString()
