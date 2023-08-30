@@ -11,8 +11,13 @@ class Program
         int[] andrewScores = new int[] { 92, 89, 81, 96, 90 };
         int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
         int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
+        int[] beckyScores = new int[] { 92, 91, 90, 91, 92, 92, 92 };
+        int[] chrisScores = new int[] { 84, 86, 88, 90, 92, 94, 96, 98 };
+        int[] ericScores = new int[] { 80, 90, 100, 80, 90, 100, 80, 90 };
+        int[] gregorScores = new int[] { 91, 91, 91, 91, 91, 91, 91 };    
 
-        string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
+        // student names
+        string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan", "Becky", "Chris", "Eric", "Gregor" };
 
         int[] studentScores = new int[10];
 
@@ -31,6 +36,16 @@ class Program
                 studentScores = emmaScores;
             else if (currentStudentName == "Logan")
                 studentScores = loganScores;
+            else if (currentStudentName == "Becky")
+                studentScores = beckyScores;
+            else if (currentStudentName == "Chris")
+                studentScores = chrisScores;
+            else if (currentStudentName == "Eric")
+                studentScores = ericScores;
+            else if (currentStudentName == "Gregor")
+                studentScores = gregorScores;
+            else
+                continue;
          
             // initialize/reset the sum of scored assignments
             int sumAssignmentScores = 0;
