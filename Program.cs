@@ -4,39 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {   
-        string[] myStrings = new string[2] { "I Like Drink Coffe. I Drink with Ice", "I Like Drink Tea" };
-        int stringCount = myStrings.Length;
-
-        string myString = "";
-        int periodLocation = 0;
-
-        for (int i = 0; i < stringCount; i++)
+        string[][] jaggedArray = new string[][]
         {
-            myString = myStrings[i];
-            periodLocation = myString.IndexOf(".");
+            new string[] { "one1", "two1", "three1", "four1", "five1", "six1" },
+            new string[] { "one2", "two2", "three2", "four2", "five2", "six2" },
+            new string[] { "one3", "two3", "three3", "four3", "five3", "six3" },
+            new string[] { "one4", "two4", "three4", "four4", "five4", "six4" },
+            new string[] { "one5", "two5", "three5", "four5", "five5", "six5" },
+            new string[] { "one6", "two6", "three6", "four6", "five6", "six6" },
+            new string[] { "one7", "two7", "three7", "four7", "five7", "six7" },
+            new string[] { "one8", "two8", "three8", "four8", "five8", "six8" }
+        };
 
-            string mySentence;
-
-            while (periodLocation != -1)
+        foreach (string[] array in jaggedArray)
+        {
+            foreach (string value in array)
             {
-                // first sentence is the string value to the left of the period location
-                mySentence = myString.Remove(periodLocation);
-
-                // the remainder of myString is the string value to the right of the location
-                myString = myString.Substring(periodLocation + 1);
-
-                // remove any leading white-space from myString
-                myString = myString.TrimStart();
-
-                // update the comma location and increment the counter
-                periodLocation = myString.IndexOf(".");
-
-                Console.WriteLine(mySentence);
+                Console.WriteLine(value);
             }
-
-             mySentence = myString.Trim();
-            Console.WriteLine(mySentence);
-
+            Console.WriteLine();
         }
     }
 }
