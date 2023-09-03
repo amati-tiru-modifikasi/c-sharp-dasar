@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {   
-        string value = "102";
+        string value = "bad";
         int result = 0;
         if (int.TryParse(value, out result)) {
             Console.WriteLine($"result: {result}");
@@ -12,6 +12,7 @@ class Program
             Console.WriteLine("Gagal dikonversi");
         }
 
-        Console.WriteLine($"Terukur dengan offset: {50 + result}");
+        if (result > 0)
+            Console.WriteLine($"Terukur dengan offset: {50 + result}");
     }
 }
