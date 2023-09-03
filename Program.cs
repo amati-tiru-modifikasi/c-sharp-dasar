@@ -4,10 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {   
-        decimal myDesimal = 1.23456789m;
-        float myFloat = (float) myDesimal;
-
-        Console.WriteLine($"Desimal: {myDesimal}");
-        Console.WriteLine($"Float: {myFloat}");      
+        int first = 5;
+        int second = 10;
+        string message = first.ToString() + second.ToString();
+        Console.WriteLine(message);
     }
 }
