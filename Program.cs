@@ -4,9 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {   
-        int first = 5;
-        int second = 10;
-        string message = first.ToString() + second.ToString();
+        string first = "5";
+        string second = "10";
+        int message = int.Parse(first) + int.Parse(second);
         Console.WriteLine(message);
     }
 }
