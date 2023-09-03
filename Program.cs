@@ -4,9 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {   
-        int first = 2;
-        string second = "4";
-        string result = first + second;
-        Console.WriteLine(result);        
+        decimal myDesimal = 3.14m;
+        Console.WriteLine($"Desimal: {myDesimal}");
+
+        int myInt = (int) myDesimal;
+        Console.WriteLine($"Integer: {myInt}");        
     }
 }
