@@ -6,7 +6,7 @@ class Program
     {   
         string first = "5";
         string second = "10";
-        int message = int.Parse(first) + int.Parse(second);
+        int message = Convert.ToInt32(first) * Convert.ToInt32(second);
         Console.WriteLine(message);
     }
 }
