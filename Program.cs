@@ -11,5 +11,7 @@ class Program
         }else{
             Console.WriteLine("Gagal dikonversi");
         }
+
+        Console.WriteLine($"Terukur dengan offset: {50 + result}");
     }
 }
