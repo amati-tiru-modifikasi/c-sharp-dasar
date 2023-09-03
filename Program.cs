@@ -4,9 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {   
-        string first = "5";
-        string second = "10";
-        int message = Convert.ToInt32(first) * Convert.ToInt32(second);
-        Console.WriteLine(message);
+        int value = (int) 1.5m;
+        Console.WriteLine(value);
+
+        int valueDua = Convert.ToInt32(1.5m);
+        Console.WriteLine(valueDua);
     }
 }
