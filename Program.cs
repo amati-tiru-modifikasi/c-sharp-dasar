@@ -72,5 +72,12 @@ class Program
         {
             Console.WriteLine($"-- {pallet}");
         }
+
+        /*
+        RECAP:
+        - Use the Clear() method to empty the values out of elements in the array.
+        - Use the Resize() method to change the number of elements in the array, removing or adding elements from the end of the array.
+        - New array elements and cleared elements are null, meaning they don't point to a value in memory.
+        */
     }
 }
