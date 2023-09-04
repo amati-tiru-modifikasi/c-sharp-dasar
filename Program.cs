@@ -23,10 +23,23 @@ class Program
         }
 
         // clear and resize
-        Console.WriteLine();
-        Console.WriteLine("Resize...");
-        Array.Clear(pallets, 0, 2);
-        Console.WriteLine($"Clearing 2... count: {pallets.Length}");
+        // Console.WriteLine();
+        // Console.WriteLine("Resize...");
+        // Array.Clear(pallets, 0, 2);
+        // Console.WriteLine($"Clearing 2... count: {pallets.Length}");
+        // foreach (var pallet in pallets)
+        // {
+        //     Console.WriteLine($"-- {pallet}");
+        // }
+
+        // clear element
+        Console.WriteLine("");
+        Console.WriteLine("Clear element...");
+        Console.WriteLine($"Before: {pallets[0]}");
+        Array.Clear(pallets,0,2);
+        Console.WriteLine($"After: {pallets[0]}");
+
+        Console.WriteLine($"Clearing 2 .... count: {pallets.Length}");
         foreach (var pallet in pallets)
         {
             Console.WriteLine($"-- {pallet}");
