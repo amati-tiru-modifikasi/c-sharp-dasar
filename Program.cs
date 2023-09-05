@@ -10,5 +10,14 @@ class Program
         // string result  = new string(valueArray);
         string result = String.Join(",",valueArray);
         Console.WriteLine(result);
+
+        // Split array
+        Console.WriteLine("");
+        Console.WriteLine("Split Array..");
+        string[] items =  result.Split(",");
+        foreach (string item in items)
+        {
+            Console.WriteLine(item);
+        }
     }
 }
