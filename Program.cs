@@ -6,7 +6,7 @@ class Program
     {   
         string first = "hello";
         string second = "world";
-        string result = string.Format("{0} {1}!",first, second);
-        Console.WriteLine(result);
+        Console.WriteLine("{0} {1}!",first, second);
+        Console.WriteLine("{0} {1} {0}!",first, second);
     }
 }
