@@ -4,7 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {   
-        // Next: Format Alphanumeric Data for Presentation in C#
-
+        string first = "hello";
+        string second = "world";
+        string result = string.Format("{0} {1}!",first, second);
+        Console.WriteLine(result);
     }
 }
