@@ -8,6 +8,8 @@ class Program
         decimal salePrice = 59.99m;
 
         string yourDiscount = String.Format("You saved {0:C2} of the regular {1:C2} price",(price - salePrice), price);
+        yourDiscount += $" A discount of {((price - salePrice)/price):P2}!"; //inserted
+        
         Console.WriteLine(yourDiscount);
     }
 }
