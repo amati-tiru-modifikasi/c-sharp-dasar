@@ -4,30 +4,36 @@ class Program
 {
     static void Main(string[] args)
     {   
-        // string first = "Hello";
-        // string second = "World";
-        // string result = string.Format("{0} {1}!", first, second);
-        // Console.WriteLine(result);
+        string customerName = "Ms. Barros";
 
-        // string input = "Pad this";
-        // Console.WriteLine(input.PadRight(12, '-'));	
+        string currentProduct = "Magic Yield";
+        int currentShares = 2975000;
+        decimal currentReturn = 0.1275m;
+        decimal currentProfit = 55000000.0m;
 
-        // string paymentId = "769C";
-        // var formattedLine = paymentId.PadRight(6);
-        // Console.WriteLine(formattedLine);
+        string newProduct = "Glorious Future";
+        decimal newReturn = 0.13125m;
+        decimal newProfit = 63000000.0m;
 
-        string paymentId = "769";
-        string payeeName = "Mr. Stephen Ortega";
-        string paymentAmount = "$5,000.00";
+        Console.WriteLine($"Dear {customerName},");
+        Console.WriteLine($"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n");
+        Console.WriteLine($"Currently, you own {currentShares:N} shares at a return of {currentReturn:P}.\n");
+        Console.WriteLine($"Our new product, {newProduct} offers a return of {newReturn:P}.  Given your current volume, your potential profit would be {newProfit:C}.\n");
 
-        var formattedLine = paymentId.PadRight(6);
-        formattedLine += payeeName.PadRight(24);
-        formattedLine += paymentAmount.PadRight(10);
+        Console.WriteLine("Here's a quick comparison:\n");
 
-        // sama dengan ini
-        // formattedLine = formattedLine + payeeName.PadRight(24);
+        string comparisonMessage = "";
 
-        Console.WriteLine(formattedLine);
+        comparisonMessage = currentProduct.PadRight(20);
+        comparisonMessage += String.Format("{0:P}", currentReturn).PadRight(10);
+        comparisonMessage += String.Format("{0:C}", currentProfit).PadRight(20);
+
+        comparisonMessage += "\n";
+        comparisonMessage += newProduct.PadRight(20);
+        comparisonMessage += String.Format("{0:P}", newReturn).PadRight(10);
+        comparisonMessage += String.Format("{0:C}", newProfit).PadRight(20);
+
+        Console.WriteLine(comparisonMessage);
     
     }
 }
