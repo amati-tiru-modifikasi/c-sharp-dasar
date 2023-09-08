@@ -4,9 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {   
-       string myString = "C# Time";
-       Console.WriteLine(myString.IndexOf("C"));
+        string message = "(What if) I am (only interested) in the last (set of parentheses)?";
+        int openingPosition = message.LastIndexOf('('); // find last this tag closing in the last position
 
-       // PAUSE: https://learn.microsoft.com/en-us/training/modules/csharp-modify-content/3-exercise-lastindexof-indexofany
+        openingPosition += 1;
+        int closingPosition = message.LastIndexOf(')');
+        int length = closingPosition - openingPosition;
+        Console.WriteLine(message.Substring(openingPosition, length));
     }
 }
