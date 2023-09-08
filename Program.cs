@@ -6,6 +6,8 @@ class Program
     {   
         // Remove characters in specific locations from a string
         string data = "12345John Smith          5000  3  ";
+        Console.WriteLine("");
+        Console.WriteLine($"Using Remove() method: {data}");
         string updateData = data.Remove(5, 20);
         Console.WriteLine(updateData);
 
