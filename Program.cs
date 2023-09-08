@@ -9,6 +9,12 @@ class Program
         string updateData = data.Remove(5, 20);
         Console.WriteLine(updateData);
 
-        
+        string message = "This--is--ex-amp-le--da-ta";
+        Console.WriteLine("");
+        Console.WriteLine($"Using Replace() method: {message}");
+        message = message.Replace("--", " ");
+        message = message.Replace("-","");
+        Console.WriteLine(message);
+
     }
 }
