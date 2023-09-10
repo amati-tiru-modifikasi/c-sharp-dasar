@@ -11,6 +11,7 @@ class Program
         string animalPhysicalDescription = "";
         string animalPersonalityDescription = "";
         string animalNickName = "";
+        string suggestedDonations = "";
 
         // #2 variabel for data
         int maxPets = 8;
@@ -18,7 +19,7 @@ class Program
         string menuSelection = "";
 
         // #3 array store runtime data, no persisted data
-        string[,] ourAnimals = new string[maxPets, 6]; // multidimensional array string
+        string[,] ourAnimals = new string[maxPets, 7]; // multidimensional array string
 
         // #4 create a sample data
         for (int i = 0; i < maxPets; i++)
@@ -32,6 +33,7 @@ class Program
                     animalPhysicalDescription = "medium sized cream colored female golden retriever weighing about 45 pounds. housebroken.";
                     animalPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.";
                     animalNickName = "Yola";
+                    suggestedDonations = "85";
                     break;
                 case 1:
                     animalSpecies = "cat";
@@ -40,6 +42,7 @@ class Program
                     animalPhysicalDescription = "medium sized cream colored female golden retriever weighing about 45 pounds. housebroken.";
                     animalPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.";
                     animalNickName = "Gous";
+                    suggestedDonations = "49.99";
                     break;
 
                 // case 2: deleted for brevity
@@ -52,6 +55,7 @@ class Program
                     animalPhysicalDescription = "";
                     animalPersonalityDescription = "";
                     animalNickName = "";
+                    suggestedDonations = "";
                     break;
             }
 
@@ -61,6 +65,7 @@ class Program
             ourAnimals[i, 3] = "Nickname: " + animalNickName;
             ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
             ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
+            ourAnimals[i, 6] = "Suggestion Donation: " + suggestedDonations;
 
         }
 
