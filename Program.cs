@@ -115,9 +115,17 @@ class Program
                 
                 case "2":
                     // Display all cat with specified characteristic
-                    Console.WriteLine("\nUNDER CONSTRUCTION - please check back next month to see progress.");
-                    Console.WriteLine("Press the Enter key to continue.");
-                    readResult = Console.ReadLine();
+                    string catCharacteristic = "";
+                    while (catCharacteristic == "")
+                    {
+                        // have the user enter characteristik search for
+                        Console.WriteLine($"Enter one desired cat characteristic to search for");
+                        readResult = Console.ReadLine();
+                        if (readResult != null)
+                        {
+                            catCharacteristic = readResult.ToLower().Trim();
+                        }
+                    }
                     break;
 
                 default:
