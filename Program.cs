@@ -126,6 +126,16 @@ class Program
                             catCharacteristic = readResult.ToLower().Trim();
                         }
                     }
+
+                    // #6 loop array ourAnimal to search matching
+                    for (int i = 0; i < maxPets; i++)
+                    {
+                        if (ourAnimals[i, 1].Contains("cat"))
+                        {
+                            // #7 Search combined descritpion and reports
+                        }
+                    }
+
                     break;
 
                 default:
