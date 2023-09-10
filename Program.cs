@@ -17,6 +17,7 @@ class Program
         int maxPets = 8;
         string? readResult; // non-nullable variable type to avoid warning when build project
         string menuSelection = "";
+        decimal decimalDonation = 0.00m;
 
         // #3 array store runtime data, no persisted data
         string[,] ourAnimals = new string[maxPets, 7]; // multidimensional array string
@@ -64,9 +65,14 @@ class Program
             ourAnimals[i, 2] = "Age: " + animalAge;
             ourAnimals[i, 3] = "Nickname: " + animalNickName;
             ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
-            ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
-            ourAnimals[i, 6] = "Suggestion Donation: " + suggestedDonations;
+            ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;            
 
+            // cast suggestionDonation() as decimal to validate
+            if (!decimal.TryParse(suggestedDonations, out decimalDonation))
+            {
+                decimalDonation =  45.00M; // if not number, default to 45
+            }
+            ourAnimals[i, 6] = $"Suggestion Donation: {decimalDonation:C2}";
         }
 
         // #5 display top level menu options
