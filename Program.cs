@@ -128,6 +128,7 @@ class Program
                     }
 
                     string catDescription = "";
+                    // LINK: https://learn.microsoft.com/en-us/training/modules/guided-project-work-variable-data-c-sharp/5-exercise-add-search
 
                     // #6 loop array ourAnimal to search matching
                     for (int i = 0; i < maxPets; i++)
