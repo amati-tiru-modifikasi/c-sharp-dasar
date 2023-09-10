@@ -4,7 +4,116 @@ class Program
 {
     static void Main(string[] args)
     {   
-        // Guided Project - Work with Variable Data in C#
+        // #1 ourAnimals array
+        string animalSpecies = "";
+        string animalId = "";
+        string animalAge = "";
+        string animalPhysicalDescription = "";
+        string animalPersonalityDescription = "";
+        string animalNickName = "";
+
+        // #2 variabel for data
+        int maxPets = 8;
+        string? readResult; // non-nullable variable type to avoid warning when build project
+        string menuSelection = "";
+
+        // #3 array store runtime data, no persisted data
+        string[,] ourAnimals = new string[maxPets, 6]; // multidimensional array string
+
+        // #4 create a sample data
+        for (int i = 0; i < maxPets; i++)
+        {
+            switch (i)
+            {
+                case 0:
+                    animalSpecies = "cat";
+                    animalId = "c1";
+                    animalAge = "3";
+                    animalPhysicalDescription = "medium sized cream colored female golden retriever weighing about 45 pounds. housebroken.";
+                    animalPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.";
+                    animalNickName = "Yola";
+                    break;
+                case 1:
+                    animalSpecies = "cat";
+                    animalId = "c1";
+                    animalAge = "9";
+                    animalPhysicalDescription = "medium sized cream colored female golden retriever weighing about 45 pounds. housebroken.";
+                    animalPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.";
+                    animalNickName = "Gous";
+                    break;
+
+                // case 2: deleted for brevity
+                // case 3: deleted for brevity
+
+                default:
+                    animalSpecies = "";
+                    animalId = "";
+                    animalAge = "";
+                    animalPhysicalDescription = "";
+                    animalPersonalityDescription = "";
+                    animalNickName = "";
+                    break;
+            }
+
+            ourAnimals[i, 0] = "ID #: " + animalId;
+            ourAnimals[i, 1] = "Species: " + animalSpecies;
+            ourAnimals[i, 2] = "Age: " + animalAge;
+            ourAnimals[i, 3] = "Nickname: " + animalNickName;
+            ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
+            ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
+
+        }
+
+        // #5 display top level menu options
+        do
+        {
+            // NOTE: to clear throwing an exceptions in debug session
+            Console.Clear();
+
+            Console.WriteLine("Welcome to the Contoso PetFriends app. Your main menu options are:");
+            Console.WriteLine(" 1. List all of our current pet information");
+            Console.WriteLine(" 2. Display all dogs with a specified characteristic");
+            Console.WriteLine();
+            Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
+
+            readResult = Console.ReadLine(); // by default it's null, but readResult is use non-nullable value by default, for avoid warning when build project
+            if (readResult != null)
+            {
+                menuSelection = readResult.ToLower();
+            }
+
+            // switch-case to selected option menu
+            switch (menuSelection)
+            {
+                case "1":
+                    // list all pet info
+                    for (int i = 0; i < maxPets; i++)
+                    {
+                        if (ourAnimals[i, 0] != "ID #: ")
+                        {
+                            Console.WriteLine();
+                            for (int j = 0; j < 6; j++)
+                            {
+                                Console.WriteLine(ourAnimals[i, j]);
+                            }
+                        }
+                    }
+                    Console.WriteLine("\n\rPress the Enter key to Continue");
+                    readResult = Console.ReadLine();
+                    break;
+                
+                case "2":
+                    // Display all cat with specified characteristic
+                    Console.WriteLine("\nUNDER CONSTRUCTION - please check back next month to see progress.");
+                    Console.WriteLine("Press the Enter key to continue.");
+                    readResult = Console.ReadLine();
+                    break;
+
+                default:
+                    break;
+            }
+            
+        } while (menuSelection != "exit");
 
     }
 }
