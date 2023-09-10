@@ -127,6 +127,8 @@ class Program
                         }
                     }
 
+                    string catDescription = "";
+
                     // #6 loop array ourAnimal to search matching
                     for (int i = 0; i < maxPets; i++)
                     {
