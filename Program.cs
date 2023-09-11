@@ -128,7 +128,9 @@ class Program
                     }
 
                     string catDescription = "";
-                    // LINK: https://learn.microsoft.com/en-us/training/modules/guided-project-work-variable-data-c-sharp/5-exercise-add-search
+
+                    // if no found matches
+                    bool noMatchTheCat = true;
 
                     // #6 loop array ourAnimal to search matching
                     for (int i = 0; i < maxPets; i++)
@@ -136,7 +138,22 @@ class Program
                         if (ourAnimals[i, 1].Contains("cat"))
                         {
                             // #7 Search combined descritpion and reports
+                            catDescription = ourAnimals[i, 4] + "\n" + ourAnimals[i, 5];
+
+                            // search combined and display a cat
+                            if (catDescription.Contains(catCharacteristic))
+                            {
+                                Console.WriteLine($"\nOur Dog {ourAnimals[i,3]} is a match");
+                                Console.WriteLine(catDescription);
+
+                                noMatchTheCat = false;
+                            }
                         }
+                    }
+
+                    if (noMatchTheCat)
+                    {
+                        Console.WriteLine("None of our cats match found for: " + catCharacteristic);
                     }
 
                     break;
