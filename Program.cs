@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {   
-        // TODO: Choose the correct data type in your C# code
+        Console.WriteLine("Signed integral types: ");
+        Console.WriteLine($"sbyte: {sbyte.MinValue} to {sbyte.MaxValue}");
+        Console.WriteLine($"short: {short.MinValue} to {short.MaxValue}");
+        Console.WriteLine($"int: {int.MinValue} to {int.MaxValue}");
+        Console.WriteLine($"long: {long.MinValue} to {long.MaxValue}");
+
     }
 }
