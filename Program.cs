@@ -7,4 +7,10 @@ class Program
         // Create C# methods with parameters
 
     }
+
+    void displayRandomNumber()
+    {
+        Random random = new Random();
+        
+    }
 }
