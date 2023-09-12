@@ -4,13 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {   
-        // Create C# methods with parameters
+        Console.WriteLine("Generating number numbers: ");
+        DisplayRandomNumber();
+
+        void DisplayRandomNumber()
+        {
+            Random random = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{random.Next(1,100)}");
+            }
+            Console.WriteLine();
+        }
 
     }
 
-    void displayRandomNumber()
-    {
-        Random random = new Random();
-        
-    }
+
 }
