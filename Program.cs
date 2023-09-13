@@ -12,6 +12,8 @@ class Program
 
         foreach (string ip in ipv4Input)
         {
+            address = ip.Split(".", StringSplitOptions.RemoveEmptyEntries);
+
             ValidateLength();
             ValidateZeroes();
             ValidateRanges();
@@ -25,15 +27,13 @@ class Program
         }
 
         void ValidateLength() {
-            string[] address = ipv4Input.Split(".");
             validLength = address.Length == 4;
         }
 
-        void ValidateZeroes(){
-            string[] address = ipv4Input.Split(".");
+        void ValidateZeroes() {
             foreach (string number in address)
             {
-                if (number.Length > 1 && number.StartWith("0"))
+                if (number.Length > 1 && number.StartsWith("0"))
                 {
                     validZeroes = false;
                     return;
@@ -42,8 +42,7 @@ class Program
             validZeroes = true;
         }
 
-        void ValidateRanges(){
-            string[] address = ipv4Input.Split(".");
+        void ValidateRanges() {
             foreach (string number in address)
             {
                 if (int.Parse(number) > 255)
