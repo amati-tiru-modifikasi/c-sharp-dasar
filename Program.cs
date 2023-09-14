@@ -4,24 +4,28 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Global student array
-        string[] students = {"Jenna","Alesha","Haikal","Ziyad","Arshaka"};
+        double pi = 3.14159;
 
-        DisplayStudents(students);
-        DisplayStudents(new string[] {"Putri","Zakiyah"}); // added more students
+        PrintCicleInfo(12);
+        PrintCicleInfo(33);
 
-        // function to view student
-        void DisplayStudents(string[] students)
+        void PrintCicleArea(int radius) 
         {
-            foreach (string student in students)
-            {
-                Console.WriteLine($"{student}, ");
-            }
-            Console.WriteLine();
+            double area = pi * (radius * radius);
+            Console.WriteLine($"Area = {area}");
         }
 
-        
-        Console.WriteLine("");
-        Console.WriteLine();
+        void PrintCirclCircumference(int radius)
+        {
+            double circumeference = 2 * pi * radius;
+            Console.WriteLine($"Circumference = {circumeference}");
+        }
+
+        void PrintCicleInfo(int radius)
+        {
+            Console.WriteLine($"Circle with radius {radius}");
+            PrintCicleArea(radius);
+            PrintCirclCircumference(radius);
+        }
     }
 }
