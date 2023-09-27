@@ -42,5 +42,7 @@ class Program
             return input.ToString().Substring(0, 5);
         }
 
+        // Recap
+
     }
 }
