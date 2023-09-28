@@ -4,6 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        // TODO: Create a method that returns a string
+        string ReverseWord(string word)
+        {
+            string result = "";
+            for (int i = 0; i < word.Length; i++)
+            {
+                result += word[i];
+            }
+            return result;
+        }
     }
 }
