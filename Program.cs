@@ -4,10 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
+        string input = "snake";
+        
+        Console.WriteLine(input);
+        Console.WriteLine(ReverseWord(input));
+
         string ReverseWord(string word)
         {
             string result = "";
-            for (int i = 0; i < word.Length; i++)
+            for (int i = word.Length - 1; i>= 0; i--)
             {
                 result += word[i];
             }
