@@ -4,9 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        int target = 60;
+        int target = 80;
         int[] coins = new int[] {5, 5, 50, 25, 25, 10, 5};
-        int[] result = TwoCoins(coins, target);
+        int[,] result = TwoCoins(coins, target);
 
         if (result.Length == 0)
         {
@@ -14,7 +14,15 @@ class Program
         }
         else
         {
-            Console.WriteLine($"Change found at positions {result[0]} and {result[1]}");
+            Console.WriteLine("Change found at positions:");
+            for (int i = 0; i < result.GetLength(0); i++)
+            {
+                if (result[i,0] == -1)
+                {
+                    break;
+                }
+                Console.WriteLine($"{result[i,0]},{result[i,1]}");
+            }
         }
 
         int[,] TwoCoins(int[] coins, int target)
