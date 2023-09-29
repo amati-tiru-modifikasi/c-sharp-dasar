@@ -4,29 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        string[] words = {"racecar" ,"talented", "deified", "tent", "tenet"};
-
-        Console.WriteLine("Is it a plindrome? ");
-        foreach (string word in words)
+        int[] TwoCoins(int[] coins, int target)
         {
-            Console.WriteLine($"{word}: {IsPalindrome(word)}");
-        }
-
-        bool IsPalindrome(string word)
-        {
-            int start = 0;
-            int end = word.Length - 1;
-
-            while (start < end)
+            for (int curr = 0; curr < coins.Length; curr++)
             {
-                if (word[start] != word[end])
+                for (int next = curr + 1; next < coins.Length; next++)
                 {
-                    return false;
+                    return new int[]{curr, next};
                 }
-                start++;
-                end--;
             }
-            return true;
+            return new int[0];
         }
     }
 }
