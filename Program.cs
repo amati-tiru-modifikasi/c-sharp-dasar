@@ -4,10 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        string input = "snake";
+        string input = "there are snakes at the zoo";
         
         Console.WriteLine(input);
-        Console.WriteLine(ReverseWord(input));
+        Console.WriteLine(ReverseSentence(input));
 
         string ReverseWord(string word)
         {
@@ -19,7 +19,20 @@ class Program
             return result;
         }
 
-        // TODO: Create a method to reverse words in a sentence
+        string ReverseSentence(string input)
+        {
+            string result = "";
+            // extrac individual word using string.Split
+            string[] words = input.Split(" ");
 
+            // store in result to access the word
+            foreach (string word in words)
+            {
+                result += ReverseWord(word) + " ";
+            }
+
+            // remove extra space with Trim()
+            return result.Trim();
+        }
     }
 }
