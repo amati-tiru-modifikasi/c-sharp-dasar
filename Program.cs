@@ -7,16 +7,24 @@ string[] pettingZoo =
     "ostriches", "pigs", "ponies", "rabbits", "sheep", "tortoises",
 };
 
-// RandomizeAnimals();
+RandomizeAnimals();
 // string[,] group = AssignGroup();
 Console.WriteLine("School A");
 // PrintGroup(group);
 
-class Program
+void RandomizeAnimals()
 {
-    static void Main(string[] args)
+    Random random = new Random();
+    for (int i = 0; i < pettingZoo.Length; i++)
     {
-        // TODO: Guided project - Plan a Petting Zoo Visit
+        int r = random.Next(i, pettingZoo.Length);
+        string tmp = pettingZoo[r];
+        pettingZoo[r] = pettingZoo[i];
+        pettingZoo[i] = tmp;
+    }
 
+    foreach(string animal in pettingZoo) 
+    {
+        Console.WriteLine(animal);
     }
 }
