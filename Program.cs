@@ -1,4 +1,4 @@
 ﻿using System;
 
-// Implement the Visual Studio Code debugging tools for C#
+// Exercise - Run code in the debug environment
 
