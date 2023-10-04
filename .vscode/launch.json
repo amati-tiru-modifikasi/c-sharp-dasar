@@ -1,32 +1,26 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
-        // {
-        //     "name": ".NET Core Launch (console)",
-        //     "type": "coreclr",
-        //     "request": "launch",
-        //     "preLaunchTask": "build",
-        //     "program": "${workspaceFolder}/bin/Debug/net7.0/csharp-dasar.dll",
-        //     "args": [],
-        //     "cwd": "${workspaceFolder}",
-        //     "stopAtEntry": false,
-        //     "console": "internalConsole"
-        // },
-
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
-            "name": ".NET Core Launch (console)",
+            "name": ".NET Core Launch (console) 12345",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/bin/Debug/net7.0/basic-c-sharp.dll",
+            "preLaunchTask": "build12345",
+            "program": "${workspaceFolder}/bin/Debug/net7.0/basic-c-sharp12345.dll",
             "args": [],
-            "cwd": "${workspaceFolder}",
-            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "cwd": "${workspaceFolder}/Project12345",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+
+        {
+            "name": ".NET Core Launch (console) 6789",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build6789",
+            "program": "${workspaceFolder}/bin/Debug/net7.0/basic-c-sharp6789.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project6789",
             "console": "internalConsole",
             "stopAtEntry": false
         },
