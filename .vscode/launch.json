@@ -2,27 +2,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console) 12345",
+            "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build12345",
-            "program": "${workspaceFolder}/bin/Debug/net7.0/basic-c-sharp12345.dll",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<net6.0>/<csharp-dasar.dll>",
             "args": [],
-            "cwd": "${workspaceFolder}/Project12345",
-            "console": "internalConsole",
-            "stopAtEntry": false
-        },
-
-        {
-            "name": ".NET Core Launch (console) 6789",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build6789",
-            "program": "${workspaceFolder}/bin/Debug/net7.0/basic-c-sharp6789.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/Project6789",
-            "console": "internalConsole",
-            "stopAtEntry": false
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
         },
 
         {
