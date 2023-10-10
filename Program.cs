@@ -14,3 +14,5 @@ catch (System.Exception)
 {
     Console.WriteLine("Exit program");
 }
+
+// Catch exceptions thrown in called methods
