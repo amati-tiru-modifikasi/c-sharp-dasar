@@ -16,6 +16,8 @@ foreach (string[] userEntries in userEnteredValues)
         {
             Console.WriteLine(ex.Message);
         }
+
+        throw new ApplicationException("An exception occured", ex);
     }
 }
 
