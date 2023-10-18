@@ -6,17 +6,22 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/<net6.0>/<csharp-dasar.dll>",
+            "program": "${workspaceFolder}/bin/Debug/net6.0/basic-c-sharp.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "console": "internalConsole"
         },
-
         {
-            "name": ".NET Core Attach",
+            "name": ".NET Core Launch (console)",
             "type": "coreclr",
-            "request": "attach"
-        }
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/net6.0/basic-c-sharp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
     ]
 }

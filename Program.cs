@@ -1,5 +1,36 @@
-﻿// RECAP:
+﻿// Prompt user
+Console.Write("Enter the lower bound: ");
+int lowerBound = int.Parse(Console.ReadLine());
 
-// When creating and throwing an exception, the exception type must match the intended purpose of the exception as closely as possible.
-// To throw an exception, you create an instance of an exception-derived class, configure its properties, and then use the throw keyword.
-// When creating an exception object, it's important to provide clear error messages and additional information to help users correct the issue.
+Console.Write("Enter the upper bound: ");
+int upperBound = int.Parse(Console.ReadLine());
+
+decimal averageValue = 0;
+
+// calculate the sum of the even numbers between the bound
+averageValue = AverageOfEvenNumbers(lowerBound, upperBound);
+
+// display value returned by averate of even number in the console
+Console.WriteLine($"The average of even number between {lowerBound} and {upperBound} is {averageValue}");
+
+// Wait for user input 
+Console.ReadLine();
+
+static decimal AverageOfEvenNumbers(int lowerBound, int upperBound)
+{
+    int sum = 0;
+    int count = 0;
+    decimal average = 0;
+
+    for (int i = lowerBound; i <= upperBound; i++)
+    {
+        if (i % 2 == 0)
+        {
+            sum += i;
+            count++;
+        }
+    }
+    average = (decimal)sum / count;
+    return average;
+
+}
