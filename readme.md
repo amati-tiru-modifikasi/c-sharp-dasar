@@ -17,3 +17,13 @@ C# Certification with freeCodeCamp Challenge
 - Tidak ada batasan waktu, tapi total waktu pengerjaan akan tercatat.
 - Ujian terdiri dari 80 Pilihan ganda.
 - Selesaikan ujian dan jawab dengan benar minimal 70% dari total pertanyaaan agar dapat Sertifikat.
+
+## Hasil
+
+### Test ke #1 (Failed)
+```bash
+Number of questions: 80
+Correct answers: 49
+Percent correct: 61.3%
+Time: 36:00
+```
