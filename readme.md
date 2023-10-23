@@ -27,3 +27,11 @@ Correct answers: 49
 Percent correct: 61.3%
 Time: 36:00
 ```
+
+### Test ke #2 (Failed)
+```bash
+Number of questions: 80
+Correct answers: 48
+Percent correct: 60%
+Time: 26:59
+```
